@@ -2,6 +2,10 @@
 
 ## 📍 Our Goals
 
+- 실버 문제부터 풀기!
+- 절대 포기하지 않기!
+- 꾸준히 스터디를 할 것!
+
 
 </br>
 
@@ -51,6 +55,8 @@
 
 
 ## 📍 Notion Page
+
+<a href="https://held-snake-cd9.notion.site/BoJ-478dc490c29e4882ba5f7dfc371c687c?pvs=4" target="_blank">SAS</a>
 
 
 
