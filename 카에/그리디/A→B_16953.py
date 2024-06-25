@@ -1,10 +1,10 @@
-# 풀이 1
-
 import sys
 from collections import deque
 sys.stdin=open("input.txt", "r")
 
 a, b = map(int, input().split())
+
+# 풀이 1
 
 queue = deque()
 queue.append([a, 0])
