@@ -29,7 +29,7 @@ print(result+1)
 
 # 풀이 2 (풀이 1보다 조금 더 빠름)
 
-result = 0
+result = 1
 
 while b != a:
     if b % 10 == 1:
@@ -42,5 +42,5 @@ while b != a:
         result = -1
         break
 
-print(result+1)
+print(result)
 
