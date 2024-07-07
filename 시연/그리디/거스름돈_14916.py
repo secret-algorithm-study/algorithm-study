@@ -3,9 +3,9 @@
 n = int(input())
 count = 0
 
-while n>0:
-    if n%5 == 0:
-        count += int(n/5)
+while n > 0:
+    if n % 5 == 0:
+        count += int(n / 5)
         break
     else:
         n -= 2
