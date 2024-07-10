@@ -10,7 +10,6 @@ for _ in range(m):
     graph[b].append(a)
 
 visited = [False] * (n + 1)
-cnt = 0
 
 def dfs(v):
     visited[v] = True
