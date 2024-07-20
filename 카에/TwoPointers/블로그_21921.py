@@ -4,14 +4,9 @@ sys.stdin=open("input.txt", "r")
 n, x = map(int, input().split())
 visiters = list(map(int, input().split()))
 
-total = 0
-cnt = 1
-max_visiters = 0 
-
-for i in range(x):
-    total += visiters[i]
-
+total = sum(visiters[:x])
 max_visiters = total
+cnt = 1
 
 for i in range(x, n):
     total -= visiters[i-x]
