@@ -10,6 +10,7 @@ r, c, n = map(int, input().split())
 grid = [list(input()) for _ in range(r)]
 
 def bfs(q,data):
+    # 폭탄 폭발 booooom!
     while q:
         x, y = q.popleft()
         data[x][y] = '.'
@@ -21,19 +22,19 @@ def bfs(q,data):
 
 def simulate(time):
     global grid, q
-    if time == 1:
+    if time == 1: # 다음 시간에 폭발시킬 폭탄 세팅
         for i in range(r):
             for j in range(c):
                 if grid[i][j] == 'O':
                     q.append((i,j))
     elif time % 2 == 1:
-        bfs(q,grid)
+        bfs(q,grid) # 이번에 폭발시킬 폭탄을 터트리기
         for x in range(r):
             for y in range(c):
-                if grid[x][y] == 'O':
+                if grid[x][y] == 'O': # 다음 시간에 폭발시킬 폭탄 세팅
                     q.append((x,y))
     else:
-        grid = [['O']*c for _ in range(r)]
+        grid = [['O']*c for _ in range(r)] # 모두 다 폭탄 세팅
 
 for i in range(1,n+1):
     simulate(i)
