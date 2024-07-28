@@ -40,17 +40,13 @@ def make_java_variable_name(s):
 
 # camel case -> snake case
 def make_Cpp_variable_name(s):
-    idx = 0
-    n = len(s)
     answer = ''
 
-    while idx < n:
-        if  s[idx].isupper():
-            answer += ('_' + s[idx].lower())
-            idx+=1
+    for char in s:
+        if char.isupper():
+            answer += '_' + char.lower()
         else:
-            answer += s[idx]
-            idx+=1
+            answer += char
 
     return answer
 
